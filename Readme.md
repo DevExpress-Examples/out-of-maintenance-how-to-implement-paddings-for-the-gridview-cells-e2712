@@ -1,4 +1,4 @@
-## In never versions, use the built-in UserCellPadding property
+## In newer versions, use the built-in UserCellPadding property
 
 ### For older versions:
 <!-- default file list -->

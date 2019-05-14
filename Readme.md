@@ -1,3 +1,6 @@
+## In never versions, use the built-in UserCellPadding property
+
+### For older versions:
 <!-- default file list -->
 *Files to look at*:
 

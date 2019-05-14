@@ -23,8 +23,8 @@ namespace MyXtraGrid {
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
-            this.myGridControl1 = new MyXtraGrid.MyGridControl();
-            this.myGridView1 = new MyXtraGrid.MyGridView();
+            this.myGridControl1 = new DevExpress.XtraGrid.GridControl();
+            this.myGridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -55,7 +55,6 @@ namespace MyXtraGrid {
             // 
             // myGridView1
             // 
-            this.myGridView1.CellPadding = new System.Windows.Forms.Padding(10);
             this.myGridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn1,
             this.gridColumn2,
@@ -162,8 +161,8 @@ namespace MyXtraGrid {
 
         #endregion
 
-        private MyGridControl myGridControl1;
-        private MyGridView myGridView1;
+        private DevExpress.XtraGrid.GridControl myGridControl1;
+        private DevExpress.XtraGrid.Views.Grid.GridView myGridView1;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;

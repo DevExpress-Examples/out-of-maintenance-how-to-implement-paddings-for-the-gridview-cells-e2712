@@ -23,9 +23,9 @@
 		''' the contents of this method with the code editor.
 		''' </summary>
 		Private Sub InitializeComponent()
-			Me.myGridControl1 = New MyXtraGrid.MyGridControl()
-			Me.myGridView1 = New MyXtraGrid.MyGridView()
-			Me.gridColumn1 = New DevExpress.XtraGrid.Columns.GridColumn()
+            Me.myGridControl1 = New DevExpress.XtraGrid.GridControl()
+            Me.myGridView1 = New DevExpress.XtraGrid.Views.Grid.GridView()
+            Me.gridColumn1 = New DevExpress.XtraGrid.Columns.GridColumn()
 			Me.gridColumn2 = New DevExpress.XtraGrid.Columns.GridColumn()
 			Me.gridColumn3 = New DevExpress.XtraGrid.Columns.GridColumn()
 			Me.repositoryItemMemoEdit1 = New DevExpress.XtraEditors.Repository.RepositoryItemMemoEdit()
@@ -50,12 +50,11 @@
 			Me.myGridControl1.Size = New System.Drawing.Size(665, 443)
 			Me.myGridControl1.TabIndex = 1
 			Me.myGridControl1.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() { Me.myGridView1})
-			' 
-			' myGridView1
-			' 
-			Me.myGridView1.CellPadding = New System.Windows.Forms.Padding(10)
-			Me.myGridView1.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() { Me.gridColumn1, Me.gridColumn2, Me.gridColumn3, Me.gridColumn4})
-			Me.myGridView1.GridControl = Me.myGridControl1
+            ' 
+            ' myGridView1
+            ' 
+            Me.myGridView1.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.gridColumn1, Me.gridColumn2, Me.gridColumn3, Me.gridColumn4})
+            Me.myGridView1.GridControl = Me.myGridControl1
 			Me.myGridView1.Name = "myGridView1"
 			Me.myGridView1.OptionsView.RowAutoHeight = True
 			' 
@@ -149,11 +148,11 @@
 
 		End Sub
 
-		#End Region
+#End Region
 
-		Private myGridControl1 As MyGridControl
-		Private myGridView1 As MyGridView
-		Private gridColumn1 As DevExpress.XtraGrid.Columns.GridColumn
+        Private myGridControl1 As DevExpress.XtraGrid.GridControl
+        Private myGridView1 As DevExpress.XtraGrid.Views.Grid.GridView
+        Private gridColumn1 As DevExpress.XtraGrid.Columns.GridColumn
 		Private gridColumn2 As DevExpress.XtraGrid.Columns.GridColumn
 		Private gridColumn3 As DevExpress.XtraGrid.Columns.GridColumn
 		Private gridColumn4 As DevExpress.XtraGrid.Columns.GridColumn
